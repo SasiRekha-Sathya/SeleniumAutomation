@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TechArchTestsLogin(failed)">
+    <parameter name="browsername" value="firefox"/>
+    <parameter name="url" value="https://login.salesforce.com/"/>
+    <groups>
+      <run>
+        <exclude name="SalesForce"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.automationscript.TeckArchTestsLogin">
+        <methods>
+          <include name="setup"/>
+          <include name="closebrowser"/>
+          <include name="rememberMe"/>
+          <include name="endReport"/>
+          <include name="setupBeforeTest"/>
+        </methods>
+      </class> <!-- com.automationscript.TeckArchTestsLogin -->
+    </classes>
+  </test> <!-- TechArchTestsLogin(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

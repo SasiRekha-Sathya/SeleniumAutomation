@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+	<test name="ChromeAutomatedTest">
+		<parameter name="browsername" value="chrome"></parameter>
+		<parameter name="url" value="https://www.google.com/"></parameter>
+		<groups>
+			<run>
+				<exclude name="SalesForce" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.automationscript.ChromeAutomatedTest" />
+		</classes>
+	</test>
+	<test name="FirefoxAutomatedTest">
+		<parameter name="browsername" value="firefox"></parameter>
+		<parameter name="url" value="https://www.google.com/"></parameter>
+		<groups>
+			<run>
+				<exclude name="SalesForce" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.automationscript.FireFoxAutomatedTest" />
+		</classes>
+	</test>
+
+	<test name="TechArchTestsLogin">
+		<parameter name="browsername" value="firefox"></parameter>
+		<parameter name="url" value="https://login.salesforce.com/"></parameter>
+		<groups>
+			<run>
+				<exclude name="SalesForce" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.automationscript.TeckArchTestsLogin" />
+		</classes>
+	</test>
+	<test name="TechArchTestsUserMenu">
+		<parameter name="browsername" value="firefox"></parameter>
+		<parameter name="url" value="https://login.salesforce.com/"></parameter>
+		<classes>
+			<class name="com.automationscript.TeckArchTestsUserMenu" />
+		</classes>
+	</test>
+	<test name="TechArchTestsAccount">
+		<parameter name="browsername" value="firefox"></parameter>
+		<parameter name="url" value="https://login.salesforce.com/"></parameter>
+		<classes>
+			<class name="com.automationscript.TeckArchTestsAccount" />
+		</classes>
+	</test>
+	<test name="TekArchTestOpp">
+		<parameter name="browsername" value="firefox"></parameter>
+		<parameter name="url" value="https://login.salesforce.com/"></parameter>
+		<classes>
+			<class name="com.automationscript.TekArchTestOpp" />
+		</classes>
+	</test>
+	<test name="TekArchestLeads">
+		<parameter name="browsername" value="chrome"></parameter>
+		<parameter name="url" value="https://login.salesforce.com/"></parameter>
+		<classes>
+			<class name="com.automationscript.TekArchTestLeads" />
+		</classes>
+	</test>
+	<test name="TekArchTestContact">
+		<parameter name="browsername" value="firefox"></parameter>
+		<parameter name="url" value="https://login.salesforce.com/"></parameter>
+		<classes>
+			<class name="com.automationscript.TekArchTestContact" />
+		</classes>
+	</test>
+	<test name="TekArchTestRS">
+		<parameter name="browsername" value="chrome"></parameter>
+		<parameter name="url" value="https://login.salesforce.com/"></parameter>
+		<classes>
+			<class name="com.automationscript.TekArchTestRS" />
+		</classes>
+	</test>
+</suite>
